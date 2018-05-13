@@ -60,13 +60,13 @@ class loanForm {
            'amount'        => $this->amount,
            'period'        => $this->period,
            'purpose'       => $this->purpose,
-           'timestamp'     => filter_input(INPUT_SERVER,'REQUEST_TIME')
+           'timestamp'     => date(DATE_ATOM)
        );
        $saveJson = json_encode($saveArray);
        if (!file_exists($this->outputFilePath)) {
            mkdir($this->outputFilePath);
        }
-       $filePath = $this->outputFilePath . "FormSubmit_" . $this->personal_code . "_" . time();
+       $filePath = $this->outputFilePath . "FormSubmit_" . $this->personal_code . "_" . time() . ".JsonForm";
        file_put_contents($filePath, $saveJson);
        $this->filePath = $filePath;
        return $filePath;
