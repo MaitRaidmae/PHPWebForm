@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 12, 2018, 6:47:18 PM
+    Author     : Hundipesa
+*/
+
+form {
+  margin-bottom: 5px;  
+}
+
+.form_field {
+    margin-bottom: 5px; 
+    margin-top: 5px;
+}
+
+input {
+    position: absolute;
+    left:120px;
+    color: #0099CC;
+    border: 1px solid #0099CC;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color:green;
+    opacity:0.3;
+}
+.btnSubmit {
+    margin-top:5px;
+    color: #0099CC;
+    background-color: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.errors {
+    margin-top: 50px;
+}
